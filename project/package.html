@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Services</title>
+    <link rel="stylesheet" href="package.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <!-- Font Awesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Hotel</h1>
+            </div>
+            <div class="link">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./package.html">Packages</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </section>
+
+    <!--<section class="services">
+        <div class="heading">
+            <h1>Services</h1>
+        </div>-->
+
+        <section class="package-cards">
+            <!-- First Card -->
+            <article class="card">
+                <img src="./img/img5.avif" alt="Birthday Special" height="200px" width="300px">
+                <h1>Birthday Special</h1>
+                <p>
+                    - Decoration<br>
+                    - Cake<br>
+                    - Drinks<br>
+                    - Dinner<br>
+                    - Gifts<br><br>
+                    Start From ₹ 23,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Birthday Special">Book NOW</button>
+            </article>
+
+            <!-- Second Card -->
+            <article class="card">
+                <img src="./img/img2.avif" alt="Time For Family" height="200px" width="300px">
+                <h1>Time For Family</h1>
+                <p>
+                    - Suite<br>
+                    - Meals<br>
+                    - Activities<br>
+                    - Pool<br>
+                    - Games<br>
+                    - Tours<br>
+                    Start From ₹ 40,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Time For Family">Book NOW</button>
+            </article>
+
+             <!-- Third Card -->
+             <article class="card">
+                <img src="./img/img4.avif" alt="Business Package" height="200px" width="300px">
+                <h1>Business Package</h1>
+                <p>
+                    - Wi-Fi<br>
+                    - Workspace<br>
+                    - Breakfast<br>
+                    - Meeting Room<br>
+                    - Airport Transfer<br>
+                    Start From ₹ 80,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Business Package">Book NOW</button>
+            </article>
+
+            <!-- Fourth Card -->
+            <article class="card">
+                <img src="./img/img3.avif" alt="Cafet Area" height="200px" width="300px">
+                <h1>Cafet Area</h1>
+                <p>
+                    - Menu<br>
+                    - Snacks<br>
+                    - Beverages<br>
+                    - Ambience<br>
+                    - Music<br>
+                    Start From ₹ 60,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Cafet Area">Book NOW</button>
+            </article>
+
+            <!-- Fifth Card -->
+            <article class="card">
+                <img src="./img/c11.avif" alt="Relaxation Package" height="200px" width="300px">
+                <h1>Relaxation Package</h1>
+                <p>
+                    - Spa<br>
+                    - Yoga<br>
+                    - Massage<br>
+                    - Relaxing Environment<br>
+                    Start From ₹ 95,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Relaxation Package">Book NOW</button>
+            </article>
+
+            <!-- Sixth Card -->
+            <article class="card">
+                <img src="./img/c2.jpg" alt="Adventure Package" height="200px" width="300px">
+                <h1>Adventure Package</h1>
+                <p>
+                    - Trekking<br>
+                    - Paragliding<br>
+                    - Rafting<br>
+                    - Helicopter Ride<br>
+                    Start From ₹ 90,000/-
+                </p>
+                <br>
+                <button class="book-now" data-service="Adventure Package">Book NOW</button>
+                <!--<button style="background-color: rgb(104, 74, 37); color: white;">Book NOW</button>-->
+
+            </article>
+
+            <!-- Other cards omitted for brevity -->
+        </section>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Complete Your Booking</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Selected Service:</label>
+                <input type="text" id="service" name="service" readonly required>
+
+                <button type="submit" id="submitBooking">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> info@swarnsparshhotel.com</p>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <p class="footer-bottom">© <span id="year"></span> Swarnsparsh Hotel.</p>
+</footer>
+
+    <!-- Link to External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
